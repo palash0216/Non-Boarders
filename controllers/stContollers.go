@@ -1,8 +1,6 @@
 package controllers
 
 import (
-	"time"
-
 	"github.com/gin-gonic/gin"
 	initializers "github.com/palash0216/Non-Boarders/Initializers"
 	"github.com/palash0216/Non-Boarders/models"
@@ -11,16 +9,16 @@ import (
 func StCreate(c *gin.Context) {
 	//Getting data
 	var body struct {
-		Name    string
-		Enroll  string
-		Place   string
-		TimeIn  time.Time
-		TimeOut time.Time
+		Name   string
+		Enroll string
+		Place  string
+		In     string
+		Out    string
 	}
 	c.Bind(&body)
 
 	//Creating a Student
-	student := models.Student{Name: body.Name, Enroll: body.Enroll, Place: body.Place, TimeIn: body.TimeIn, TimeOut: body.TimeOut}
+	student := models.Student{Name: body.Name, Enroll: body.Enroll, Place: body.Place, In: body.In, Out: body.Out}
 	result := initializers.DB.Create(&student)
 
 	if result.Error != nil {

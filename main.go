@@ -15,5 +15,5 @@ func main() {
 	r := gin.Default()
 	//Add Controllers
 	r.POST("/student", controllers.StCreate)
-	r.Run(":3000")
+	r.Run()
 }
