@@ -14,11 +14,27 @@ This repository contains a RESTful API built with Go to facilitate CRUD operatio
 
 - **GIN Framework:** Fast and lightweight HTTP web framework for Go ([gin-gonic/gin](https://github.com/gin-gonic/gin))
 
-- **DaemonCompile:** [DaemonCompile](https://github.com/daemoncompile) for...
-
+- **DaemonCompile:** [DaemonCompile](https://github.com/daemoncompile)
+You can use the go tool to install CompileDaemon:
+```bash
+go get github.com/githubnemo/CompileDaemon
+```
+To run Your Code use:
+```bash
+$ CompileDaemon -command="./MyProgram -my-options"
+```
 - **Gorm:** An ORM library for Golang, used here with PostgreSQL ([go-gorm/gorm](https://github.com/go-gorm/gorm))
+  To install Gorm in your system use:
+  ```bash
+  go get -u gorm.io/gorm
+  go get -u gorm.io/driver/sqlite
+  ```
 
 - **Godotenv:** A Go port of the Ruby dotenv library, used for loading environment variables from a .env file ([joho/godotenv](https://github.com/joho/godotenv))
+  To install use the command:
+  ```bash
+  go get github.com/joho/godotenv
+  ```
 
 - **TablePlus:** A modern, native app with an elegant UI for database management ([TablePlus](https://tableplus.com/))
 
