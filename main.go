@@ -16,5 +16,7 @@ func main() {
 	//Add Controllers
 	r.POST("/student", controllers.StCreate)
 	r.GET("/student", controllers.StudentIndex)
+	r.GET("/student/:id", controllers.StudentShow)
+
 	r.Run()
 }

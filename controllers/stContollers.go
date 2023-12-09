@@ -42,3 +42,15 @@ func StudentIndex(c *gin.Context) {
 		"students": students,
 	})
 }
+
+func StudentShow(c *gin.Context) {
+	//Get ID of URL
+	id := c.Param("id")
+	//Get the post
+	var student models.Student
+	initializers.DB.First(&student, id)
+	//repond to them
+	c.JSON(200, gin.H{
+		"student": student,
+	})
+}
