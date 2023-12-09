@@ -32,3 +32,13 @@ func StCreate(c *gin.Context) {
 		"student": student,
 	})
 }
+
+func StudentIndex(c *gin.Context) {
+	//Get the post
+	var students []models.Student
+	initializers.DB.Find(&students)
+	//repond to them
+	c.JSON(200, gin.H{
+		"students": students,
+	})
+}

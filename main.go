@@ -15,5 +15,6 @@ func main() {
 	r := gin.Default()
 	//Add Controllers
 	r.POST("/student", controllers.StCreate)
+	r.GET("/student", controllers.StudentIndex)
 	r.Run()
 }
