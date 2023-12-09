@@ -1,9 +1,14 @@
-![](http://i.imgur.com/y8g506n.png?1)
+<h1 align="center"> Non-Boarders </h1> <br>
+<p align="center">
+  <a href="[https://gitpoint.co/](https://github.com/palash0216/Non-Boarders/blob/main/Logo.png)">
+    <img alt="GitPoint" title="GitPoint" src="http://i.imgur.com/VShxJHs.png" width="450">
+  </a>
+</p>
 
-# joe
-
-A `.gitignore` magician in your command line. Joe generates `.gitignore` files from the command line for you.
-
+<p align="center">
+  GitHub in your pocket. Built with React Native.
+</p>
+<!-- Image Part Upto Here -->
 ![](http://i.imgur.com/2tAksHG.gif)
 
 ## Features
