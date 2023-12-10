@@ -54,3 +54,36 @@ func StudentShow(c *gin.Context) {
 		"student": student,
 	})
 }
+
+func StUpdate(c *gin.Context) {
+	//Get ID off the URL
+	id := c.Param("id")
+
+	//Get the data off the req
+	var body struct {
+		Name   string
+		Enroll string
+		Place  string
+		In     string
+		Out    string
+	}
+	c.Bind(&body)
+
+	//Find the post were updating
+	var student models.Student
+	initializers.DB.First(&student, id)
+
+	//Update it
+	initializers.DB.Model(&student).Updates(models.Student{
+		Name:   body.Name,
+		Enroll: body.Enroll,
+		Place:  body.Place,
+		In:     body.In,
+		Out:    body.Out,
+	})
+
+	//repond to them
+	c.JSON(200, gin.H{
+		"student": student,
+	})
+}
