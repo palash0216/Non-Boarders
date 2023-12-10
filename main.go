@@ -18,5 +18,6 @@ func main() {
 	r.PUT("/student/:id", controllers.StUpdate)
 	r.GET("/student", controllers.StudentIndex)
 	r.GET("/student/:id", controllers.StudentShow)
+	r.DELETE("/student/:id", controllers.StDelete)
 	r.Run()
 }

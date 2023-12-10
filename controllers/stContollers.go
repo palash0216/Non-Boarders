@@ -87,3 +87,13 @@ func StUpdate(c *gin.Context) {
 		"student": student,
 	})
 }
+
+func StDelete(c *gin.Context) {
+	//Get ID off the URL
+	id := c.Param("id")
+
+	//Delete the Post
+	initializers.DB.Delete(&models.Student{}, id)
+	//repond to them
+	c.Status(200)
+}
