@@ -28,7 +28,7 @@ $ CompileDaemon -command="./MyProgram -my-options"
 To install Gorm in your system use:
 ```bash
 go get -u gorm.io/gorm
-go get -u gorm.io/driver/sqlite
+go get -u gorm.io/driver/"your DB"
 ```
 
 - **Godotenv:** A Go port of the Ruby dotenv library, used for loading environment variables from a .env file ([joho/godotenv](https://github.com/joho/godotenv))
