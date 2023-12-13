@@ -82,6 +82,10 @@ Before running the API, make sure you have the following tools installed:
     ```bash
     go run main.go
     ```
+    
+5. **To Test:**
+   Download Postman and import all the files and run.
+
 
 ## API Endpoints
 
