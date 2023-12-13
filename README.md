@@ -47,7 +47,7 @@ Before running the API, make sure you have the following tools installed:
 
 - Go (Latest Version)
 - DaemonCompile (Latest Version)
-- PostgreSQL
+- PostgreSQL - Elephant Sql ([E-SQL](https://www.elephantsql.com/))
 - Godotenv
 - TablePlus (optional, for database visualization)
 - Postman (optional, for testing and documentation)
