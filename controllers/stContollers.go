@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"fmt"
+
 	"github.com/gin-gonic/gin"
 	initializers "github.com/palash0216/Non-Boarders/Initializers"
 	"github.com/palash0216/Non-Boarders/models"
@@ -22,7 +24,10 @@ func StCreate(c *gin.Context) {
 	result := initializers.DB.Create(&student)
 
 	if result.Error != nil {
-		c.Status(404)
+		// Respond with an error and return
+		c.AbortWithStatusJSON(400, gin.H{
+			"error": result.Error.Error(),
+		})
 		return
 	}
 
@@ -37,6 +42,8 @@ func StudentIndex(c *gin.Context) {
 	//Get the post
 	var students []models.Student
 	initializers.DB.Find(&students)
+	// Log the response status code for debugging
+	fmt.Println("Response Status Code:", c.Writer.Status())
 	//repond to them
 	c.JSON(200, gin.H{
 		"students": students,

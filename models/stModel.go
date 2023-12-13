@@ -6,9 +6,9 @@ import (
 
 type Student struct {
 	gorm.Model
-	Name   string
-	Enroll string
-	Place  string
-	In     string
-	Out    string
+	Name   string `jsno:"name"`
+	Enroll string `jsno:"enroll"`
+	Place  string `jsno:"place"`
+	In     string `jsno:"in"`
+	Out    string `jsno:"out"`
 }
