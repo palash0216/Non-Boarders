@@ -102,5 +102,13 @@ Before running the API, make sure you have the following tools installed:
 
 ![Screenshot 2023-12-11 182259](https://github.com/palash0216/Non-Boarders/assets/75239216/27d67a38-4097-4f2f-b3ed-903badda8e03)
 
+____________________________________________________________________________________________________________
+
+## Sequence Diagram
+(Create using ([Visula Paradigm](https://online.visual-paradigm.com/)))
+
+![Screenshot 2023-12-13 110605](https://github.com/palash0216/Non-Boarders/assets/75239216/b6858309-f587-4e62-a04a-2b23e244031d)
+
+
 
 
